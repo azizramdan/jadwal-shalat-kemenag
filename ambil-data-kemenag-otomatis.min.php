@@ -40,8 +40,6 @@
         return $index[1];
     }
 
-    getCURL('https://bimasislam.kemenag.go.id/jadwalshalat', '');
-
     $provinsi = getCURL('https://bimasislam.kemenag.go.id/jadwalshalat', '');
     $provinsi = trim(preg_replace('/[\t\n\r\s]+/', ' ', $provinsi));
     $provinsi = explode('<select id="search_prov">', $provinsi);
