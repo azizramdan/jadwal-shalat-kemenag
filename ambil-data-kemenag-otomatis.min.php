@@ -26,13 +26,13 @@
         $index;
         $data = explode('</option>', $arr);
         array_pop($data);
-        foreach ($data as &$val) {
-            $val = $val . '</option>';
+        foreach ($data as &$value) {
+            $value = $value . '</option>';
         }
 
-        foreach($data as $key => $arrayItem){
-            if( stristr( $arrayItem, $keyword ) ){
-                $index = $arrayItem;
+        foreach($data as $key => $value){
+            if( stristr( $value, $keyword ) ){
+                $index = $value;
                 break;
             }
         }
